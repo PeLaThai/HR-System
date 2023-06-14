@@ -1,0 +1,703 @@
+{
+  "info": {
+    "_postman_id": "b27ec0db-f9f1-4f63-b676-48eef72446d0",
+    "name": "Final Project",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "20209821"
+  },
+  "item": [
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "email",
+                  "value": "nguyenvuthai3004@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "123456",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "http://localhost:8082/api/v1/user/login"
+          },
+          "response": []
+        },
+        {
+          "name": "Get List Users",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYzRlNDg1NS00N2NhLTRiNjYtODU4MS02OTFkZmViOTliYzkiLCJpYXQiOjE2ODM3MjI0NTl9.CBDbUcL-YXJAF4mv72wJIWq4bVdy5mn2Z42kPhOzHbU"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/user",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "user"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "OPEN--CLOSED",
+                  "disabled": true
+                },
+                {
+                  "key": "",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create User",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkY2FkMjA1OS02OTQ0LTRhMmUtYTNhYi00MzgwMmQ1ZjI2NjAiLCJpYXQiOjE2ODQwNjc4OTd9.cAUkmR4kvyKIWC1G45M4aqTlHdUMMUVEMNbHtuiZ1Jc"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "thainv1@vmodev.com",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "123456",
+                  "type": "text"
+                },
+                {
+                  "key": "firstName",
+                  "value": "Thai",
+                  "type": "text"
+                },
+                {
+                  "key": "lastName",
+                  "value": "Le",
+                  "type": "text"
+                },
+                {
+                  "key": "age",
+                  "value": "27",
+                  "type": "text"
+                },
+                {
+                  "key": "phone",
+                  "value": "0965816097",
+                  "type": "text"
+                },
+                {
+                  "key": "bhxh",
+                  "value": "DN1689635",
+                  "type": "text"
+                },
+                {
+                  "key": "address",
+                  "value": "Cau Giay, Ha Noi",
+                  "type": "text"
+                },
+                {
+                  "key": "avatar",
+                  "type": "file",
+                  "src": "/C:/Users/ACER/OneDrive/Pictures/porsche_panamera_2021_4k-HD.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/v1/user/create?",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "user", "create"],
+              "query": [
+                {
+                  "key": "",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update User",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYzRlNDg1NS00N2NhLTRiNjYtODU4MS02OTFkZmViOTliYzkiLCJpYXQiOjE2ODM3MjI0NTl9.CBDbUcL-YXJAF4mv72wJIWq4bVdy5mn2Z42kPhOzHbU"
+              }
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "firstName",
+                  "value": "Thai",
+                  "type": "text"
+                },
+                {
+                  "key": "lastName",
+                  "value": "Luong",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "123456",
+                  "type": "text"
+                },
+                {
+                  "key": "age",
+                  "value": "25",
+                  "type": "text"
+                },
+                {
+                  "key": "phone",
+                  "value": "0904102688",
+                  "type": "text"
+                },
+                {
+                  "key": "address",
+                  "value": "Nam Tu Liem, Ha Noi",
+                  "type": "text"
+                },
+                {
+                  "key": "bhxh",
+                  "value": "DN4797911578",
+                  "type": "text"
+                },
+                {
+                  "key": "avatar",
+                  "type": "file",
+                  "src": "/C:/Users/ACER/OneDrive/Pictures/panamera2.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/v1/user/update/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "user", "update", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "4bc751f6-398c-4f1f-ad43-abb0dc5680d5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete User",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYzRlNDg1NS00N2NhLTRiNjYtODU4MS02OTFkZmViOTliYzkiLCJpYXQiOjE2ODM3MjI0NTl9.CBDbUcL-YXJAF4mv72wJIWq4bVdy5mn2Z42kPhOzHbU"
+              }
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/user/delete/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "user", "delete", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "4bc751f6-398c-4f1f-ad43-abb0dc5680d5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User by Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYzRlNDg1NS00N2NhLTRiNjYtODU4MS02OTFkZmViOTliYzkiLCJpYXQiOjE2ODMyNzEzODV9.tbq33qtnsV5yvZLGFEkRNEIcW9ebaSdyMee6sdlvG1s"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/user/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "user", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "ac4e4855-47ca-4b66-8581-691dfeb99bc9"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "My Infor",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYzRlNDg1NS00N2NhLTRiNjYtODU4MS02OTFkZmViOTliYzkiLCJpYXQiOjE2ODM3OTY2NDR9.frP5DgTmZ7rIsX9g0aThzsbsT0-0O-iFb_NYi8YQcXw"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8082/api/v1/my-infor"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Form",
+      "item": [
+        {
+          "name": "Get All Form",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYzRlNDg1NS00N2NhLTRiNjYtODU4MS02OTFkZmViOTliYzkiLCJpYXQiOjE2ODM3Mjc1Nzh9.RDVGkPOKkNMmB0u_fucq4nr5j3ktG7pDLcHK8vPIzDo"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8082/api/v1/form"
+          },
+          "response": []
+        },
+        {
+          "name": "Get All User Forms",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYzRlNDg1NS00N2NhLTRiNjYtODU4MS02OTFkZmViOTliYzkiLCJpYXQiOjE2ODM3MjI0NTl9.CBDbUcL-YXJAF4mv72wJIWq4bVdy5mn2Z42kPhOzHbU"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/user-form",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "user-form"],
+              "query": [
+                {
+                  "key": "keyword",
+                  "value": "dsdsada",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Form",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkY2FkMjA1OS02OTQ0LTRhMmUtYTNhYi00MzgwMmQ1ZjI2NjAiLCJpYXQiOjE2ODQwNjc4OTd9.cAUkmR4kvyKIWC1G45M4aqTlHdUMMUVEMNbHtuiZ1Jc"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"categoryName\": \"PERFORMANCE_REVIEW\",\r\n    \"name\": \"PERFORMANCE REVIEW form for employee in last 2023\",\r\n    \"expDate\": 1683809412000,\r\n    \"userIds\": [\r\n        \"f1dcb993-9c64-41dc-989f-c1ba206d3006\"\r\n    ],\r\n    \"managerId\": \"dcad2059-6944-4a2e-a3ab-43802d5f2660\"\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8082/api/v1/form"
+          },
+          "response": []
+        },
+        {
+          "name": "Submit Form",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJmMWRjYjk5My05YzY0LTQxZGMtOTg5Zi1jMWJhMjA2ZDMwMDYiLCJpYXQiOjE2ODQwNjg3ODN9.5RwGRrHDowdwerH6wRumhMhaNsuQyu2LFVLDt45nyPc"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "userCmt",
+                  "value": "I have done this report",
+                  "type": "text"
+                },
+                {
+                  "key": "descTask",
+                  "value": "My report : abc-xyz-ghe",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/v1/form/submit-form/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "form", "submit-form", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "b097e8f0-e00e-41f6-a2f5-181a4177a141"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Submited Form for Manager",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyZTQ3MGIzMC03NzUzLTRhMDgtYmVkMi04NGRjMTZkYjZkNDAiLCJpYXQiOjE2ODQ0MjgzODZ9.NvlGOPLToRrwj2BWVvDgc0YtZZWGeGXwTzXcrF0Xoiw"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8082/api/v1/manager-form"
+          },
+          "response": []
+        },
+        {
+          "name": "Approval Form",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYzRlNDg1NS00N2NhLTRiNjYtODU4MS02OTFkZmViOTliYzkiLCJpYXQiOjE2ODM3MjQ2MzJ9.2SO5_USTAf6BnSQVOeLp95LSFYdS4JU3Un2G76P8-Co"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "managerComment",
+                  "value": "This report is quite good",
+                  "type": "text"
+                },
+                {
+                  "key": "result",
+                  "value": "Pass",
+                  "type": "text"
+                },
+                {
+                  "key": "point",
+                  "value": "95",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/v1/form/approval-form/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "form", "approval-form", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "9dfd9ccc-bd8a-495a-b4cc-42a1788976f4"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Form Of Employee",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkZmIzY2E5Ny01ZmU5LTRlMjYtODNiNC02MDE5NDc1YjQ5MjAiLCJpYXQiOjE2ODQ0MjkyNTl9.xH6k-_VKy_xBaFtBwseIOncnuA17mRjmWvitNLjcXE8"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8082/api/v1/employee-form"
+          },
+          "response": []
+        },
+        {
+          "name": "User Update Form",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkOGI1NGUzMC1lNGNlLTExZWQtOThkOS04ZmZkZjhiNjA3NmYiLCJpYXQiOjE2ODI5MjM3NzZ9.vLy_z73Q_tfCNUtPXDIAQJJxhNmb0mgWPGiMZXMRuzc"
+              }
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "userCmt",
+                  "value": "My comment",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Good!",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/v1/form/user-update-form/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "form", "user-update-form", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "b6bde2bb-1f87-4a1f-b75a-74e73c402ab1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Report Labour Form",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8082/api/v1/form/report-labour"
+          },
+          "response": []
+        },
+        {
+          "name": "Report Performance Form",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxMTAxZjA3MC0xZjQ1LTRjNDItODZjZC0yOTcxOTEyNDljOGUiLCJpYXQiOjE2ODQ0MzA4NjN9.j52VGYFicwYB6gzcWG3jJj3Jzf5k18ZGAcch3dldbKU"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8082/api/v1/report-performance"
+          },
+          "response": []
+        },
+        {
+          "name": "Close User Form",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxMTAxZjA3MC0xZjQ1LTRjNDItODZjZC0yOTcxOTEyNDljOGUiLCJpYXQiOjE2ODQ0MzA4NjN9.j52VGYFicwYB6gzcWG3jJj3Jzf5k18ZGAcch3dldbKU"
+              }
+            },
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/form/close-user-form/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "form", "close-user-form", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "e48da917-74f0-4850-b3f1-59e5a6d611fd"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Close Form",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/form/close-form/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "form", "close-form", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Form by Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkY2FkMjA1OS02OTQ0LTRhMmUtYTNhYi00MzgwMmQ1ZjI2NjAiLCJpYXQiOjE2ODQ0MzIwNzl9.a65z4c5CFLbGT_rNs7AsecjP542Pkwewn-iLkk9erWM"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/form/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "form", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "0a5dd100-f21c-11ed-9396-6558cd265e59"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Form",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYzRlNDg1NS00N2NhLTRiNjYtODU4MS02OTFkZmViOTliYzkiLCJpYXQiOjE2ODQwNDc1NTd9.P-MqLfSy4yUn-FIWC8L7iblnne8gtZjaMvWan1JnYcI"
+              }
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/form/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "form", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "c278a2e0-f21e-11ed-bea7-6782d6687834"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get UserForm by Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkY2FkMjA1OS02OTQ0LTRhMmUtYTNhYi00MzgwMmQ1ZjI2NjAiLCJpYXQiOjE2ODQwNjc4OTd9.cAUkmR4kvyKIWC1G45M4aqTlHdUMMUVEMNbHtuiZ1Jc"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/user-form/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "user-form", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "b097e8f0-e00e-41f6-a2f5-181a4177a141"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete User Form",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkY2FkMjA1OS02OTQ0LTRhMmUtYTNhYi00MzgwMmQ1ZjI2NjAiLCJpYXQiOjE2ODQwNjg4MzR9.sDEYNSAKz7sC0JzbZ9Uv2zMCK-FUhB2F8WNUh_DK3n0"
+              }
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/user-form/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["api", "v1", "user-form", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "b097e8f0-e00e-41f6-a2f5-181a4177a141"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
